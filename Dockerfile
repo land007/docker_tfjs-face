@@ -2,7 +2,7 @@ FROM land007/tfjs-html:latest
 
 MAINTAINER Yiqiu Jia <yiqiujia@hotmail.com>
 
-#ADD node /node
+#ADD face_node /node
 #WORKDIR /node
 #RUN cp /node_modules/@tensorflow/tfjs-core/dist/io/weights_loader.js /node_modules/@tensorflow/tfjs-core/dist/io/weights_loader_old.js
 #ADD weights_loader.js /node_modules/@tensorflow/tfjs-core/dist/io/weights_loader.js
