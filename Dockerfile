@@ -12,8 +12,10 @@ RUN . $HOME/.nvm/nvm.sh && cd /node_/face-api.js/ && npm i && cd /node_/face-api
 #ADD weights_loader.js /node_modules/@tensorflow/tfjs-core/dist/io/weights_loader.js
 #CMD /etc/init.d/ssh start && node /node/lxp.js
 
-RUN echo $(date "+%Y-%m-%d_%H:%M:%S") >> /.image_time
-RUN echo "land007/tfjs-face" >> /.image_name
+RUN echo $(date "+%Y-%m-%d_%H:%M:%S") >> /.image_times
+RUN echo $(date "+%Y-%m-%d_%H:%M:%S") > /.image_time
+RUN echo "land007/tfjs-face" >> /.image_names
+RUN echo "land007/tfjs-face" > /.image_name
 
 #docker stop face ; docker rm face ; docker run -it --privileged -p 8081:8081 -p 20022:20022 --name face land007/tfjs-face:latest
 
